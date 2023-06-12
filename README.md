@@ -4,6 +4,8 @@ Simple bot for Cart Surfer game on Club Penguin Rewritten servers.
 
 Initially, I was going to aim for 200 coins /game, but that was too difficult to code, so instead, this bot will get a score of 40-60 while dying at every turn. But hey, it works.
 
+From my (light) testing, it seems to generate about **163 coins per minute**.
+
 # Demo
 
 [![Video Demo](https://img.youtube.com/vi/xgupmvprGzY/0.jpg)](https://www.youtube.com/watch?v=xgupmvprGzY)
