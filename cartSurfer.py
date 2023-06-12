@@ -49,6 +49,7 @@ def main():
     while True:
         print('Finding game enterance...')
         time.sleep(1)
+        pg.moveTo(100, 100)
 
         if (mine := find_center('images/mine.png')):
             pg.click(mine)
