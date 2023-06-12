@@ -61,6 +61,11 @@ def main():
             time.sleep(2)
             break
 
+        if (done := find_center('images/done.png')):
+            print('Missed done button, clicking now.')
+            pg.click(done)
+            time.sleep(0.5)
+
     while not (yes := find_center('images/yes.png')):
         print('Cant find yes button. sleeping')
         time.sleep(1)
