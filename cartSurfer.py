@@ -78,7 +78,7 @@ def main():
         time.sleep(1)
     
     print('Play button found, clicking...')
-    pg.click(button)
+    pg.doubleClick(button)
 
     print('Sleeping for 0.3s...')
     time.sleep(0.3)
