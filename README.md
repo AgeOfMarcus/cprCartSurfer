@@ -22,3 +22,6 @@ From my (light) testing, it seems to generate about **163 coins per minute**.
     - `python cartSurfer.py`
     - Make sure the CPR window is visible and in focus
 
+When capturing the images used for the on-screen element detection, my game window was not full screen. My graphics settings were also on the highest. Due to this, the program may not work at first for you.
+
+To fix this, you can recapture and replace all images in the `images/` directory.
