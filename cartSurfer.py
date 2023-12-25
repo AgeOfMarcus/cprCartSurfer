@@ -1,4 +1,5 @@
 import pyautogui as pg
+from pyautogui import ImageNotFoundException
 from typing import Tuple
 import time
 
@@ -7,9 +8,12 @@ def find_center(fp: str) -> Tuple[int, int]:
     Attempts to find play button, returns center of button if found.
     (loading time est 1.5s)
     """
-    image = pg.locateOnScreen(fp)
-    if image:
-        return image.left + image.width / 2, image.top + image.height / 2
+    try:
+        image = pg.locateOnScreen(fp)
+        if image:
+            return image.left + image.width / 2, image.top + image.height / 2
+    except ImageNotFoundException:
+        return None
 
 def do_turn(direction: str):
     """
