@@ -21,7 +21,8 @@ From my (light) testing, it seems to generate about **163 coins per minute**.
 * Launch Club Penguin, and run the bot
     - `python cartSurfer.py`
     - Make sure the CPR window is visible and in focus
+    - Also be sure graphics are on lowest setting and window is maximized.
 
-When capturing the images used for the on-screen element detection, my game window was not full screen. My graphics settings were also on the highest. Due to this, the program may not work at first for you.
+When capturing the images used for the on-screen element detection, my game window was maximized. My graphics settings were also on the lowest. Due to this, the program may not work at first for you.
 
 To fix this, you can recapture and replace all images in the `images/` directory.
