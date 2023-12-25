@@ -34,14 +34,14 @@ def play_round():
 
     while True:
         pg.keyDown('up')
-        if pg.locateOnScreen('images/arrow_left.png'):
+        if find_center('images/arrow_left.png'):
             do_turn('left')
             break
-        elif pg.locateOnScreen('images/arrow_right.png'):
+        elif find_center('images/arrow_right.png'):
             do_turn('right')
             break
 
-        elif (dead := pg.locateOnScreen('images/death.png')):
+        elif (dead := find_center('images/death.png')):
             print('YO I DIED HOW? FIX ME')
             pg.press('space')
             time.sleep(0.2)
@@ -90,7 +90,7 @@ def main():
     lives = 2
     while True:
         pg.keyDown('up')
-        if (death := pg.locateOnScreen('images/death.png')):
+        if (death := find_center('images/death.png')):
             if lives == 0:
                 while not (x_btn := find_center('images/quit.png')):
                     print('Cant find quit button. sleeping')
